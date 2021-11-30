@@ -7,7 +7,7 @@ def solution(s):
                 count = 0
                 if j+z >= len(s):
                     break
-                if s[j:i] == s[j+z:i]:
+                if s[j:j+i-1] == s[j+z:j+z+i-1]:
                     count += 1
                 else:
                     length -= i*count
